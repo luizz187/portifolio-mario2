@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
+
+:root {
+  --vermelho-mario: #E52521;
+  --azul-mario: #0094FF;
+  --amarelo-mario: #FFD700;
+  --verde-luigi: #2ECC71;
+  --alto-contraste-fundo: #000000;
+  --alto-contraste-texto: #ffffff;
+  --alto-contraste-link: #FFD700;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #F9F9F9;
+  font-size: 1rem;
+}
+
+header {
+  background-color: var(--vermelho-mario);
+  color: white;
+  border-bottom: 4px solid var(--amarelo-mario);
+}
+
+.nav-link {
+  color: white;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  color: var(--amarelo-mario);
+}
+
+.inicio-fundo {
+  background-image: url('img/mario-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  width: 100%;
+  height: 600px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-inicio {
+  width: 420px;
+  max-width: 45%;
+}
+
+.botao-inicio {
+  background-color: var(--amarelo-mario);
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  padding: 0.8rem 1.6rem;
+  font-weight: bold;
+}
+
+h2 {
+  color: var(--vermelho-mario);
+  font-weight: 900;
+  text-shadow: 2px 2px var(--amarelo-mario);
+}
+
+/* Galeria */
+#galeria {
+  background-color: #FFF8E1;
+}
+
+/* Formulário */
+.formulario {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+
+/* Acessibilidade */
+.menu-acessibilidade {
+  position: fixed;
+  top: 2rem;
+  right: 20px;
+  z-index: 1000;
+}
+
+.rotacao-botao {
+  transform: rotate(-90deg);
+  transition: .2s;
+}
+
+.opcoes-acessibilidade {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.opcoes-acessibilidade button {
+  margin-bottom: 5px;
+}
+
+.apresenta-lista {
+  display: none;
+}
+
+.alto-contraste {
+  background-color: var(--alto-contraste-fundo);
+  color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+  background-color: var(--alto-contraste-fundo);
+  color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link {
+  color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .btn-primary {
+  background-color: var(--alto-contraste-link);
+  color: var(--alto-contraste-fundo);
+}
